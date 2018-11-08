@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 
 LOCAL_USE_AAPT2 := true
 
-LOCAL_MODULE := AicpGear-util
+LOCAL_MODULE := BaikalOSGear-util
 
 LOCAL_PROGUARD_ENABLED := disabled
 LOCAL_JAR_EXCLUDED_FILES := none

@@ -36,7 +36,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.aicp.gear.preference.R;
+import ru.baikalos.gear.preference.R;
 
 /**
  * A preference type that allows a user to choose a time
