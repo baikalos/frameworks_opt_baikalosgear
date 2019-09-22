@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package com.aicp.gear.util;
+package com.baikalos.gear.util;
 
 public class ActionConfig {
 

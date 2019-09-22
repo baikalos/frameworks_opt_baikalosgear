@@ -1,4 +1,4 @@
-package com.aicp.gear.util;
+package com.baikalos.gear.util;
 
 import android.content.Context;
 import android.content.pm.ActivityInfo;

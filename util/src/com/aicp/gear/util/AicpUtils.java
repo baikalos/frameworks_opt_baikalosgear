@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 AICP
+ * Copyright (C) 2017 BaikalOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.aicp.gear.util;
+package com.baikalos.gear.util;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -48,9 +48,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 
-public class AicpUtils {
+public class BaikalOSUtils {
 
-    private static final String TAG = "AicpUtils";
+    private static final String TAG = "BaikalOSUtils";
 
     public static boolean isChineseLanguage() {
        return Resources.getSystem().getConfiguration().locale.getLanguage().startsWith(
@@ -263,7 +263,7 @@ public class AicpUtils {
      * @hide
      */
     public static void toggleOmniSwitchRecents(Context context, UserHandle user) {
-        final Intent intent = new Intent(AicpUtils.ACTION_TOGGLE_OVERLAY2);
+        final Intent intent = new Intent(BaikalOSUtils.ACTION_TOGGLE_OVERLAY2);
         intent.setPackage(APP_PACKAGE_NAME);
         context.sendBroadcastAsUser(intent, user);
     }
@@ -272,7 +272,7 @@ public class AicpUtils {
      * @hide
      */
     public static void hideOmniSwitchRecents(Context context, UserHandle user) {
-        final Intent intent = new Intent(AicpUtils.ACTION_HIDE_OVERLAY);
+        final Intent intent = new Intent(BaikalOSUtils.ACTION_HIDE_OVERLAY);
         intent.setPackage(APP_PACKAGE_NAME);
         context.sendBroadcastAsUser(intent, user);
     }
@@ -281,7 +281,7 @@ public class AicpUtils {
      * @hide
      */
     public static void restoreHomeStack(Context context, UserHandle user) {
-        final Intent intent = new Intent(AicpUtils.ACTION_RESTORE_HOME_STACK);
+        final Intent intent = new Intent(BaikalOSUtils.ACTION_RESTORE_HOME_STACK);
         intent.setPackage(APP_PACKAGE_NAME);
         context.sendBroadcastAsUser(intent, user);
     }
@@ -290,7 +290,7 @@ public class AicpUtils {
      * @hide
      */
     public static void preloadOmniSwitchRecents(Context context, UserHandle user) {
-        final Intent intent = new Intent(AicpUtils.ACTION_PRELOAD_TASKS);
+        final Intent intent = new Intent(BaikalOSUtils.ACTION_PRELOAD_TASKS);
         intent.setPackage(APP_PACKAGE_NAME);
         context.sendBroadcastAsUser(intent, user);
     }

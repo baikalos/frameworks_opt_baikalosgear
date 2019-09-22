@@ -16,7 +16,7 @@
 -->
 <resources>
 
-    <declare-styleable name="aicp_SelfRemovingPreference">
+    <declare-styleable name="baikalos_SelfRemovingPreference">
         <attr name="replacesKey" format="string" />
         <attr name="requiresOwner" format="boolean" />
         <attr name="requiresPackageInstalled" format="string" />

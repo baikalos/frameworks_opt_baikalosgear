@@ -17,7 +17,7 @@
 * -->
 */
 
-package com.aicp.gear.util;
+package com.baikalos.gear.util;
 
 import android.app.ActivityManager;
 import android.content.Context;

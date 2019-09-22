@@ -13,7 +13,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package com.aicp.gear.util;
+package com.baikalos.gear.util;
 
 import android.bluetooth.BluetoothAdapter;
 import android.content.ContentResolver;

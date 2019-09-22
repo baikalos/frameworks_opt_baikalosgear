@@ -30,7 +30,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
-import com.aicp.gear.preference.R;
+import com.baikalos.gear.preference.R;
 
 public class ColorPickerDialog
         extends

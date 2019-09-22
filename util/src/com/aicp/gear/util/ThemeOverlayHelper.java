@@ -1,4 +1,4 @@
-package com.aicp.gear.util;
+package com.baikalos.gear.util;
 
 import android.app.UiModeManager;
 import android.content.ContentResolver;
@@ -18,106 +18,106 @@ public class ThemeOverlayHelper {
     private static final String TAG = ThemeOverlayHelper.class.getSimpleName();
 
     private static final String[] DARK_COMMON_OVERLAYS = {
-            "com.aicp.overlay.defaultdark.com.android.calculator2",
-            "com.aicp.overlay.defaultdark.com.android.contacts",
-            "com.aicp.overlay.defaultdark.com.android.deskclock",
-            "com.aicp.overlay.defaultdark.com.android.dialer",
-            "com.aicp.overlay.defaultdark.com.android.documentsui",
-            "com.aicp.overlay.defaultdark.com.android.messaging",
-            "com.aicp.overlay.defaultdark.com.android.packageinstaller",
-            "com.aicp.overlay.defaultdark.com.android.phone",
-            "com.aicp.overlay.defaultdark.com.android.server.telecom",
-            "com.aicp.overlay.defaultdark.com.android.settings.intelligence",
-            "com.aicp.overlay.defaultdark.com.android.settings",
+            "com.baikalos.overlay.defaultdark.com.android.calculator2",
+            "com.baikalos.overlay.defaultdark.com.android.contacts",
+            "com.baikalos.overlay.defaultdark.com.android.deskclock",
+            "com.baikalos.overlay.defaultdark.com.android.dialer",
+            "com.baikalos.overlay.defaultdark.com.android.documentsui",
+            "com.baikalos.overlay.defaultdark.com.android.messaging",
+            "com.baikalos.overlay.defaultdark.com.android.packageinstaller",
+            "com.baikalos.overlay.defaultdark.com.android.phone",
+            "com.baikalos.overlay.defaultdark.com.android.server.telecom",
+            "com.baikalos.overlay.defaultdark.com.android.settings.intelligence",
+            "com.baikalos.overlay.defaultdark.com.android.settings",
     };
 
     private static final String[] DARK_OVERLAYS = {
-            "com.aicp.overlay.defaultdark.android",
-            "com.aicp.overlay.defaultdark.com.android.systemui",
+            "com.baikalos.overlay.defaultdark.android",
+            "com.baikalos.overlay.defaultdark.com.android.systemui",
     };
 
     private static final String[] BLACK_OVERLAYS = {
-            "com.aicp.overlay.defaultblack.android",
-            "com.aicp.overlay.defaultblack.com.android.systemui",
+            "com.baikalos.overlay.defaultblack.android",
+            "com.baikalos.overlay.defaultblack.com.android.systemui",
     };
 
     private static final String[] DARK_NOTIF_OVERLAYS = {
-            "com.aicp.overlay.defaultdark.notif.android",
-            "com.aicp.overlay.defaultdark.notif.com.android.systemui",
+            "com.baikalos.overlay.defaultdark.notif.android",
+            "com.baikalos.overlay.defaultdark.notif.com.android.systemui",
     };
 
     private static final String[] BLACK_NOTIF_OVERLAYS = {
-            "com.aicp.overlay.defaultblack.notif.android",
-            "com.aicp.overlay.defaultblack.notif.com.android.systemui",
+            "com.baikalos.overlay.defaultblack.notif.android",
+            "com.baikalos.overlay.defaultblack.notif.com.android.systemui",
     };
 
     private static final String[] DARK_TRANSPARENT_OVERLAYS = {
-            "com.aicp.overlay.defaultdark.transparent.android",
-            "com.aicp.overlay.defaultdark.transparent.com.android.systemui",
+            "com.baikalos.overlay.defaultdark.transparent.android",
+            "com.baikalos.overlay.defaultdark.transparent.com.android.systemui",
     };
 
     private static final String[] BLACK_TRANSPARENT_OVERLAYS = {
-            "com.aicp.overlay.defaultblack.transparent.android",
-            "com.aicp.overlay.defaultblack.transparent.com.android.systemui",
+            "com.baikalos.overlay.defaultblack.transparent.android",
+            "com.baikalos.overlay.defaultblack.transparent.com.android.systemui",
     };
 
     private static final String[] ACCENT_OVERLAYS = {
-            "com.aicp.overlay.accent.amber.android",
-            "com.aicp.overlay.accent.greenlight.android",
-            "com.aicp.overlay.accent.lime.android",
-            "com.aicp.overlay.accent.bluelight.android",
-            "com.aicp.overlay.accent.cyan.android",
-            "com.aicp.overlay.accent.denim.android",
-            "com.aicp.overlay.accent.gold.android",
-            "com.aicp.overlay.accent.orange.android",
-            "com.aicp.overlay.accent.oxygen.android",
-            "com.aicp.overlay.accent.pink.android",
-            "com.aicp.overlay.accent.pixel.android",
-            "com.aicp.overlay.accent.purple.android",
-            "com.aicp.overlay.accent.red.android",
-            "com.aicp.overlay.accent.teal.android",
-            "com.aicp.overlay.accent.turquoise.android",
-            "com.aicp.overlay.accent.yellow.android",
-            "com.aicp.overlay.accent.grey.android",
-            "com.aicp.overlay.accent.carnation.android",
-            "com.aicp.overlay.accent.whiteblack.android",
-            "com.aicp.overlay.accent.indigo.android",
-            "com.aicp.overlay.accent.lava.android",
+            "com.baikalos.overlay.accent.amber.android",
+            "com.baikalos.overlay.accent.greenlight.android",
+            "com.baikalos.overlay.accent.lime.android",
+            "com.baikalos.overlay.accent.bluelight.android",
+            "com.baikalos.overlay.accent.cyan.android",
+            "com.baikalos.overlay.accent.denim.android",
+            "com.baikalos.overlay.accent.gold.android",
+            "com.baikalos.overlay.accent.orange.android",
+            "com.baikalos.overlay.accent.oxygen.android",
+            "com.baikalos.overlay.accent.pink.android",
+            "com.baikalos.overlay.accent.pixel.android",
+            "com.baikalos.overlay.accent.purple.android",
+            "com.baikalos.overlay.accent.red.android",
+            "com.baikalos.overlay.accent.teal.android",
+            "com.baikalos.overlay.accent.turquoise.android",
+            "com.baikalos.overlay.accent.yellow.android",
+            "com.baikalos.overlay.accent.grey.android",
+            "com.baikalos.overlay.accent.carnation.android",
+            "com.baikalos.overlay.accent.whiteblack.android",
+            "com.baikalos.overlay.accent.indigo.android",
+            "com.baikalos.overlay.accent.lava.android",
     };
 
     private static final String[] ROUND_OVERLAYS = {
-            "com.aicp.overlay.round.android",
-            "com.aicp.overlay.round.com.android.launcher3",
+            "com.baikalos.overlay.round.android",
+            "com.baikalos.overlay.round.com.android.launcher3",
     };
 
     private static final String[] NONROUND_OVERLAYS = {
-            "com.aicp.overlay.nonround.android",
-            "com.aicp.overlay.nonround.com.android.systemui",
-            "com.aicp.overlay.nonround.com.android.launcher3",
+            "com.baikalos.overlay.nonround.android",
+            "com.baikalos.overlay.nonround.com.android.systemui",
+            "com.baikalos.overlay.nonround.com.android.launcher3",
     };
 
     private static final String[] OLDICONS_OVERLAYS = {
-            "com.aicp.overlay.oldicons.com.android.systemui",
-            "com.aicp.overlay.oldicons.com.android.settings",
+            "com.baikalos.overlay.oldicons.com.android.systemui",
+            "com.baikalos.overlay.oldicons.com.android.settings",
     };
 
     private static final String QS_SHAPE_PLAIN_OVERLAY =
-            "com.aicp.overlay.qsshape.plain.com.android.systemui";
+            "com.baikalos.overlay.qsshape.plain.com.android.systemui";
 
     private static final String QS_SHAPE_PLAIN_ACCENT_OVERLAY =
-            "com.aicp.overlay.qsshape.plainaccent.com.android.systemui";
+            "com.baikalos.overlay.qsshape.plainaccent.com.android.systemui";
 
     private static final String QS_SHAPE_SQUIRCLE_ACCENT_OVERLAY =
-            "com.aicp.overlay.qsshape.squircle.com.android.systemui";
+            "com.baikalos.overlay.qsshape.squircle.com.android.systemui";
 
     private static final String QS_SHAPE_SQUARE_ACCENT_OVERLAY =
-            "com.aicp.overlay.qsshape.square.com.android.systemui";
+            "com.baikalos.overlay.qsshape.square.com.android.systemui";
 
     private static final String QS_SHAPE_ROUNDED_SQUARE_ACCENT_OVERLAY =
-            "com.aicp.overlay.qsshape.roundedsquare.com.android.systemui";
+            "com.baikalos.overlay.qsshape.roundedsquare.com.android.systemui";
 
     private static final String QS_SHAPE_HEXAGON_OVERLAY =
-            "com.aicp.overlay.qsshape.hexagon.com.android.systemui";
+            "com.baikalos.overlay.qsshape.hexagon.com.android.systemui";
 
     private static final HashMap<Integer, String> ACCENT_MAP = new HashMap();
     static {

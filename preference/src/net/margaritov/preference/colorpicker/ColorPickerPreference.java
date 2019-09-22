@@ -36,7 +36,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.aicp.gear.preference.R;
+import com.baikalos.gear.preference.R;
 
 /**
  * A preference type that allows a user to choose a time
@@ -54,7 +54,7 @@ public class ColorPickerPreference extends Preference implements
 
     // if android:defaultValue is not set, button is not enabled
     private static final String ANDROIDNS = "http://schemas.android.com/apk/res/android";
-    private static final String AICPGEARNS = "http://schemas.android.com/apk/res-auto";
+    private static final String BaikalOSGEARNS = "http://schemas.android.com/apk/res-auto";
     private static final int DEF_VALUE_DEFAULT = -6;
     private static final int DEF_VALUE_DEFAULT_CHECK = -7; // != DEF_VALUE_DEFAULT
     private int mDefValue = -1;
@@ -98,8 +98,8 @@ public class ColorPickerPreference extends Preference implements
         mDensity = getContext().getResources().getDisplayMetrics().density;
         setOnPreferenceClickListener(this);
         if (attrs != null) {
-            mPreviewLed = attrs.getAttributeBooleanValue(AICPGEARNS, "ledPreview", false);
-            mAlphaSliderEnabled = attrs.getAttributeBooleanValue(AICPGEARNS, "alphaSlider",
+            mPreviewLed = attrs.getAttributeBooleanValue(BaikalOSGEARNS, "ledPreview", false);
+            mAlphaSliderEnabled = attrs.getAttributeBooleanValue(BaikalOSGEARNS, "alphaSlider",
                     !mPreviewLed);
             mDefValue = attrs.getAttributeIntValue(ANDROIDNS, "defaultValue", DEF_VALUE_DEFAULT);
             if (mDefValue == DEF_VALUE_DEFAULT) {
